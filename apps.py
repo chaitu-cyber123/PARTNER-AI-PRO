@@ -7,28 +7,27 @@ APPS = {
     "settings": "com.android.settings",
     "gmail": "com.google.android.gm"
 }
+import subprocess
 
 def open_app(name):
-    name = name.lower()
+    if name.lower() != "youtube":
+        return "Only testing YouTube."
 
-    if name not in APPS:
-        return "I couldn't find that app."
-
-    package = APPS[name]
-
-    try:
-        subprocess.run([
+    result = subprocess.run(
+        [
             "am",
             "start",
             "-a",
             "android.intent.action.MAIN",
-            "-c",
-            "android.intent.category.LAUNCHER",
-            "-p",
-            package
-        ], check=True)
+            "-n",
+            "com.google.android.youtube/com.google.android.apps.youtube.app.WatchWhileActivity"
+        ],
+        capture_output=True,
+        text=True
+    )
 
-        return f"Opening {name}."
-
-    except Exception as e:
-        return f"Failed to open {name}: {e}"
+    return (
+        f"Return code: {result.returncode}\n"
+        f"STDOUT:\n{result.stdout}\n"
+        f"STDERR:\n{result.stderr}"
+    )

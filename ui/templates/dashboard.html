@@ -1,40 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Partner AI v2.2</title>
+<title>Partner AI v3.0</title>
 
-<link rel="stylesheet" href="/static/style.css">
-
+<link rel="stylesheet" href="/static/css/style.css">
 </head>
 
 <body>
 
-<div class="header">
-🤖 PARTNER AI
+<header class="topbar">
+
+<div class="logo">
+🤖 <span>PARTNER AI</span>
 </div>
 
-<div class="card">
-
-<div class="core">
-    <div class="ring ring1"></div>
-    <div class="ring ring2"></div>
-    <div id="orb"></div>
+<div class="topinfo">
+<span id="clock">00:00</span>
+<span id="battery">🔋--%</span>
 </div>
-<h2>🟢 SYSTEM ONLINE</h2>
 
-<button onclick="voiceCommand()">
+</header>
+
+<main>
+
+<div id="core">
+
+<div id="orb"></div>
+
+<div class="rings">
+<div class="ring ring1"></div>
+<div class="ring ring2"></div>
+<div class="ring ring3"></div>
+</div>
+
+</div>
+
+<div id="status">
+Ready to assist you, sir.
+</div>
+
+<button id="micButton" onclick="voiceCommand()">
 🎤 Speak
 </button>
 
-<div id="chat">
-    <div class="partner">
-        🤖 <b>Partner:</b> Ready to assist you, sir.
-    </div>
-</div>
+<section id="chat">
+
+<div class="partner">
+🤖 <b>Partner:</b> Ready to assist you, sir.
 </div>
 
-<script src="/static/app.js"></script>
+</section>
+
+<div class="inputBar">
+
+<input
+id="textCommand"
+type="text"
+placeholder="Type a command...">
+
+<button onclick="sendText()">
+Send
+</button>
+
+</div>
+
+</main>
+
+<script src="/static/js/app.js"></script>
+<script src="/static/js/ai_core.js"></script>
 
 </body>
 </html>
+

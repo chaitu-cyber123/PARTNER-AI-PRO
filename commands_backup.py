@@ -43,14 +43,15 @@ def handle_command(text):
     if "show my notes" in text:
         return show_notes()
 #open apps
+
     if text.startswith("open "):
-        app = text.replace("open ", "", 1).strip()
 
-        with open("action.txt", "w") as f:
-            f.write(app)
+    app = text.replace("open ", "", 1).strip()
 
-        return f"Opening {app}..."
+    with open("action.txt", "w") as f:
+        f.write(app)
 
+    return f"Opening {app}..."
     # Learn user's name
     if "my name is " in text:
         name = text.split("my name is ", 1)[1].strip()

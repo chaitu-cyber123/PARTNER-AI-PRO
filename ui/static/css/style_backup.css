@@ -98,11 +98,20 @@ opacity:.7;
     margin:10px 0;
 }
 
-.core{
-    position:relative;
-    width:220px;
-    height:220px;
-    margin:30px auto;
+#core{
+
+    width:300px;
+
+    height:300px;
+
+    margin:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
 }
 
 .ring{
@@ -139,4 +148,43 @@ opacity:.7;
 @keyframes spin2{
     from{transform:rotate(360deg);}
     to{transform:rotate(0deg);}
+}
+.hud{
+    display:grid;
+    grid-template-columns:280px 1fr 280px;
+    height:100vh;
+    background:#05070d;
+}
+
+.left-panel,
+.right-panel{
+
+    padding:20px;
+
+    border-right:1px solid cyan;
+
+    backdrop-filter:blur(15px);
+
+}
+
+.right-panel{
+
+    border-left:1px solid cyan;
+
+    border-right:none;
+
+}
+
+.center-panel{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:flex-start;
+
+    padding-top:30px;
+
 }

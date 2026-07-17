@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#05070d;
+    color:#00eaff;
+    font-family:Arial,sans-serif;
+    height:100vh;
+}
+
+header{
+    height:60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 20px;
+    border-bottom:1px solid #00eaff;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+.status{
+    display:flex;
+    gap:15px;
+}
+
+main{
+    display:grid;
+    grid-template-columns:220px 1fr 220px;
+    height:calc(100vh - 200px);
+}
+.left,
+.right{
+    padding:20px;
+    background:rgba(0,255,255,0.03);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(0,255,255,.25);
+    box-shadow:0 0 15px rgba(0,255,255,.08);
+}
+
+.right{
+    border-right:none;
+    border-left:1px solid rgba(0,234,255,.3);
+}
+.center{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+}
+
+#core{
+    width:380px;
+    height:380px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:25px;
+}
+button{
+    background:#00d9ff;
+    color:black;
+    border:none;
+    border-radius:30px;
+    padding:14px 28px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px cyan;
+}
+#chat{
+    height:180px;
+    border-top:1px solid #00eaff;
+    overflow:auto;
+    padding:15px;
+}
+
+footer{
+    height:80px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    border-top:1px solid #00eaff;
+}
+
+input{
+    width:70%;
+    padding:12px;
+    border-radius:8px;
+}
+#orb{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    background:#00eaff;
+    box-shadow:0 0 60px #00eaff;
+    transition:all .4s ease;
+}
+#orb{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    background:#00eaff;
+    box-shadow:0 0 60px #00eaff;
+    transition:all .4s ease;
+}
+

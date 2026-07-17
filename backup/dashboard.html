@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Partner AI v3.0</title>
+
+<link rel="stylesheet"
+href="/static/css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+🤖 PARTNER AI
+</div>
+
+<div class="status">
+
+<span id="clock">00:00</span>
+
+<span id="battery">🔋--%</span>
+
+<span id="network">📶</span>
+
+</div>
+
+</header>
+
+
+<main>
+
+<aside class="left">
+
+<h2>SYSTEM</h2>
+
+<div id="system-info">
+
+CPU<br>
+RAM<br>
+Storage<br>
+
+</div>
+
+</aside>
+
+
+<section class="center">
+
+<div id="core">
+    <div id="orb"></div>
+</div>
+
+<button onclick="voiceCommand()">
+🎤 Speak
+</button>
+
+</section>
+
+<aside class="right">
+
+<h2>LIVE DATA</h2>
+
+<div id="weather">
+
+
+Weather loading...
+
+</div>
+
+</aside>
+
+</main>
+
+
+<section id="chat">
+
+<div class="partner">
+
+🤖 Partner:
+Ready to assist you, sir.
+
+</div>
+
+</section>
+
+
+<footer>
+
+<input
+id="textCommand"
+placeholder="Type a command...">
+
+<button onclick="sendText()">
+
+Send
+
+</button>
+
+</footer>
+
+<script src="/static/js/app.js"></script>
+<script src="/static/js/ai_core.js">
+</script>
+
+</body>
+
+</html>
