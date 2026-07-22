@@ -1,0 +1,23 @@
+@import url("layout.css");
+@import url("panels.css");
+@import url("reactor.css");
+@import url("chat.css");
+@import url("effects.css");
+@import url("animations.css");
+#notification-badge{
+
+    padding:6px 12px;
+
+    border:1px solid #00ffff;
+
+    border-radius:20px;
+
+    color:#00ffff;
+
+    font-size:13px;
+
+    margin-right:15px;
+
+    box-shadow:0 0 10px rgba(0,255,255,.4);
+
+}

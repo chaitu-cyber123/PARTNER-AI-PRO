@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partner AI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<!-- BOOT SCREEN -->
+<div id="boot-screen">
+<div class="boot-reactor">
+    <div class="boot-core"></div>
+</div>
+    <div class="boot-logo">PARTNER AI</div>
+
+    <div id="boot-text">
+        INITIALIZING CORE...
+    </div>
+
+    <div class="boot-bar">
+        <div id="boot-progress"></div>
+    </div>
+
+</div>
+
+<!-- HUD -->
+<div class="hud">
+<div class="mobile-header">
+    <div class="mobile-logo">PARTNER AI</div>
+    <div class="mobile-clock" id="clock-mobile">--:--</div>
+</div>
+    <header class="topbar">
+
+        <div class="logo">
+            PARTNER AI
+        </div>
+
+        <div class="status">
+            <span id="status-text">READY</span>
+            <span id="clock">--:--</span>
+        </div>
+<div class="panel core-status">
+
+    <h3>PARTNER CORE</h3>
+
+    <div id="core-status">
+        SYSTEM CHECKING...
+    </div>
+
+</div>
+    </header>
+
+    <main class="hud-main">
+
+        <!-- LEFT PANEL -->
+        <aside class="side-panel">
+
+           <h3>SYSTEM</h3>
+
+<p>CPU : <span id="cpu">0%</span></p>
+
+<p>RAM : <span id="ram">0%</span></p>
+
+<p>NETWORK : <span id="network">ONLINE</span></p>
+
+<p>MODEL : PARTNER AI</p>
+
+<p>VERSION : V5.0</p>
+        </aside>
+
+        <!-- CENTER -->
+        <section class="center-panel">
+
+            <div class="reactor">
+<div class="wave3 voice-wave"></div>
+    <div class="wave2 voice-wave"></div>
+    <div class="wave1 voice-wave"></div>
+
+                <div class="ring outer-ring"></div>
+
+                <div class="ring middle-ring"></div>
+
+                <div class="ring inner-ring"></div>
+<div class="arc arc1"></div>
+<div class="arc arc2"></div>
+<div class="arc arc3"></div>
+                <div class="scanner"></div>
+<div class="cross horizontal"></div>
+<div class="cross vertical"></div>
+                <div id="orb" class="orb idle">
+
+                    <div class="core"></div>
+
+                </div>
+
+            </div>
+
+            <div class="partner-status">
+                PARTNER AI ONLINE
+            </div>
+
+        </section>
+
+        <!-- RIGHT PANEL -->
+        <aside class="side-panel">
+
+           <h3>PROCESS</h3>
+
+<p id="listen-state">LISTENING : FALSE</p>
+
+<p id="think-state">THINKING : FALSE</p>
+
+<p id="response-state">STATUS : READY</p>
+
+<p>VOICE : ACTIVE</p>
+
+<p>TIME : <span id="clock2">--:--</span></p>
+</aside>
+
+</main>
+
+<section class="console-panel">
+
+    <div id="chat-box" class="chat-box"></div>
+
+    <div class="bottom-bar">
+
+        <button id="mic-btn">🎤</button>
+
+        <input
+            id="message"
+            type="text"
+            placeholder="Ask Partner anything..."
+            autocomplete="off"
+        >
+
+        <button id="send-btn" onclick="sendMessage()">
+            ➜
+        </button>
+
+    </div>
+
+</section>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/boot.js') }}"></script>
+<script src="{{ url_for('static', filename='js/particles.js') }}"></script>
+<script src="{{ url_for('static', filename='js/orb.js') }}"></script>
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,470 @@
+/* =========================
+   ORB
+========================= */
+
+.orb{
+
+    animation:
+        reactorPulse 3s ease-in-out infinite;
+
+}
+box-shadow:
+0 0 25px #00d9ff,
+0 0 60px #00d9ff,
+0 0 120px rgba(0,217,255,.8);
+@keyframes reactorPulse{
+
+    0%,100%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.05);
+
+    }
+
+}
+
+/* =========================
+   RINGS
+========================= */
+
+.ring1{
+
+    animation:rotateCW 12s linear infinite;
+
+}
+
+.ring2{
+
+    animation:rotateCCW 18s linear infinite;
+
+}
+
+.ring3{
+
+    animation:rotateCW 30s linear infinite;
+
+}
+
+@keyframes rotateCW{
+
+    from{
+
+        transform:translate(-50%,-50%) rotate(0deg);
+
+    }
+
+    to{
+
+        transform:translate(-50%,-50%) rotate(360deg);
+
+    }
+
+}
+
+@keyframes rotateCCW{
+
+    from{
+
+        transform:translate(-50%,-50%) rotate(360deg);
+
+    }
+
+    to{
+
+        transform:translate(-50%,-50%) rotate(0deg);
+
+    }
+
+}
+
+/* =========================
+   VOICE WAVES
+========================= */
+
+.listening .voice-wave{
+
+    animation:wavePulse 2s infinite;
+
+}
+
+.wave2{
+
+    animation-delay:.4s;
+
+}
+
+.wave3{
+
+    animation-delay:.8s;
+
+}
+
+@keyframes wavePulse{
+
+    0%{
+
+        transform:translate(-50%,-50%) scale(.7);
+
+        opacity:.8;
+
+    }
+
+    100%{
+
+        transform:translate(-50%,-50%) scale(1.3);
+
+        opacity:0;
+
+    }
+
+}
+
+/* =========================
+   SCAN
+========================= */
+
+.scanner{
+    animation:spin 3s linear infinite;
+    opacity:.7;
+    filter:blur(1px);
+}
+@keyframes scanMove{
+
+    from{
+
+        transform:translateY(-150px);
+
+    }
+
+    to{
+
+        transform:translateY(calc(100vh + 150px));
+
+    }
+
+}
+@keyframes pulseIdle{
+
+0%,100%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.05);
+}
+
+}
+
+@keyframes pulseListening{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.12);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+@keyframes thinking{
+
+0%{
+transform:rotate(0deg);
+}
+
+100%{
+transform:rotate(360deg);
+}
+
+}
+
+@keyframes speaking{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.15);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+/* ==========================
+   VOICE WAVE ANIMATION
+==========================*/
+
+@keyframes voicePulse{
+
+    0%{
+        transform:scale(.8);
+        opacity:0;
+    }
+
+    40%{
+        opacity:.9;
+    }
+
+    100%{
+        transform:scale(1.5);
+        opacity:0;
+    }
+
+}
+
+.orb.listening ~ .wave1,
+.orb.speaking ~ .wave1{
+    animation:voicePulse 1.2s infinite;
+}
+
+.orb.listening ~ .wave2,
+.orb.speaking ~ .wave2{
+    animation:voicePulse 1.2s .25s infinite;
+}
+
+.orb.listening ~ .wave3,
+.orb.speaking ~ .wave3{
+    animation:voicePulse 1.2s .5s infinite;
+}
+@keyframes orbGlow{
+
+0%{
+transform:scale(1);
+filter:brightness(1);
+}
+
+50%{
+transform:scale(1.06);
+filter:brightness(1.35);
+}
+
+100%{
+transform:scale(1);
+filter:brightness(1);
+}
+
+}
+
+.orb{
+animation:orbGlow 2s ease-in-out infinite;
+}
+/* =========================
+   VOICE WAVES
+========================= */
+
+.voice-wave{
+
+    position:absolute;
+
+    left:50%;
+    top:50%;
+
+    width:140px;
+    height:140px;
+
+    border:2px solid rgba(0,255,255,.45);
+
+    border-radius:50%;
+
+    transform:
+        translate(-50%,-50%) scale(.8);
+
+    opacity:0;
+
+    pointer-events:none;
+
+}
+
+
+/* Speaking */
+
+.orb.speaking ~ .wave1{
+
+    animation:
+        waveExpand 1.0s infinite;
+
+}
+
+.orb.speaking ~ .wave2{
+
+    animation:
+        waveExpand 1.0s infinite .25s;
+
+}
+
+.orb.speaking ~ .wave3{
+
+    animation:
+        waveExpand 1.0s infinite .5s;
+
+}
+
+
+/* Listening */
+
+.orb.listening ~ .wave1,
+.orb.listening ~ .wave2,
+.orb.listening ~ .wave3{
+
+    animation:
+        listeningWave 1.5s infinite;
+
+}
+
+
+@keyframes waveExpand{
+
+    0%{
+
+        transform:
+            translate(-50%,-50%) scale(.8);
+
+        opacity:.8;
+
+    }
+
+    100%{
+
+        transform:
+            translate(-50%,-50%) scale(2.2);
+
+        opacity:0;
+
+    }
+
+}
+
+
+@keyframes listeningWave{
+
+    0%,100%{
+
+        transform:
+            translate(-50%,-50%) scale(.9);
+
+        opacity:.25;
+
+    }
+
+    50%{
+
+        transform:
+            translate(-50%,-50%) scale(1.2);
+
+        opacity:.6;
+
+    }
+
+}
+/* =========================
+   THINKING MODE
+========================= */
+
+/* Reactor rings */
+
+.orb.thinking ~ .outer-ring,
+.orb.thinking ~ .middle-ring,
+.orb.thinking ~ .inner-ring{
+
+    animation:
+        reactorSpin 2s linear infinite;
+
+}
+
+/* Scanner */
+
+.orb.thinking ~ .scanner{
+
+    animation:
+        scannerSweep 1.2s linear infinite;
+
+}
+
+/* Arcs */
+
+.orb.thinking ~ .arc{
+
+    animation:
+        arcFlash .8s ease-in-out infinite;
+
+}
+
+
+/* Ring rotation */
+
+@keyframes reactorSpin{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+
+/* Scanner sweep */
+
+@keyframes scannerSweep{
+
+    0%{
+
+        transform:rotate(0deg);
+
+        opacity:.2;
+
+    }
+
+    50%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:rotate(360deg);
+
+        opacity:.2;
+
+    }
+
+}
+
+
+/* Arc glow */
+
+@keyframes arcFlash{
+
+    0%,100%{
+
+        opacity:.3;
+
+    }
+
+    50%{
+
+        opacity:1;
+
+    }
+
+}
