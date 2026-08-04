@@ -1,0 +1,82 @@
+[
+    {
+        "question": "what is the internet",
+        "answer": "The internet is a global network that connects computers and devices to share information and services."
+    },
+    {
+        "question": "what is a computer",
+        "answer": "A computer is an electronic device that processes data and performs tasks according to instructions."
+    },
+    {
+        "question": "what is software",
+        "answer": "Software is a collection of programs and instructions that tell a computer how to perform tasks."
+    },
+    {
+        "question": "what is hardware",
+        "answer": "Hardware refers to the physical components of a computer such as the processor, memory, and storage devices."
+    },
+    {
+        "question": "what is an operating system",
+        "answer": "An operating system is system software that manages computer hardware and provides services for applications."
+    },
+    {
+        "question": "what is linux",
+        "answer": "Linux is an open-source operating system kernel used in many operating systems and servers."
+    },
+    {
+        "question": "what is android",
+        "answer": "Android is a mobile operating system based on the Linux kernel and developed primarily by Google."
+    },
+    {
+        "question": "what is a smartphone",
+        "answer": "A smartphone is a mobile device that combines communication features with computing capabilities."
+    },
+    {
+        "question": "what is data",
+        "answer": "Data is raw information that can be processed to produce meaningful results."
+    },
+    {
+        "question": "what is a database",
+        "answer": "A database is an organized collection of data that can be stored, accessed, and managed efficiently."
+    },
+    {
+        "question": "what is cloud computing",
+        "answer": "Cloud computing provides computing resources such as storage, servers, and software through the internet."
+    },
+    {
+        "question": "what is cybersecurity",
+        "answer": "Cybersecurity is the practice of protecting systems, networks, and data from digital attacks."
+    },
+    {
+        "question": "what is encryption",
+        "answer": "Encryption converts readable information into coded data to protect it from unauthorized access."
+    },
+    {
+        "question": "what is a password",
+        "answer": "A password is a secret combination of characters used to verify identity and protect accounts."
+    },
+    {
+        "question": "what is a website",
+        "answer": "A website is a collection of web pages available on the internet under a domain name."
+    },
+    {
+        "question": "what is a browser",
+        "answer": "A browser is software used to access and view websites on the internet."
+    },
+    {
+        "question": "what is google",
+        "answer": "Google is a technology company known for its search engine, cloud services, Android, and AI products."
+    },
+    {
+        "question": "what is microsoft",
+        "answer": "Microsoft is a technology company known for Windows, Office, Azure cloud, and software products."
+    },
+    {
+        "question": "what is apple",
+        "answer": "Apple is a technology company known for products such as iPhone, Mac, iPad, and software services."
+    },
+    {
+        "question": "what is open source",
+        "answer": "Open source means software whose source code is available for people to inspect, modify, and improve."
+    }
+]

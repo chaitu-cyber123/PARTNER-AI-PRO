@@ -5,7 +5,11 @@
     "preferences": {
         "favorite_language": "python",
         "my favorite color": "blue",
-        "favorite anime": "dragon ball"
+        "favorite anime": "dragon ball",
+        "favorite food": "okra curry",
+        "favorite color": "blue"
     },
-    "facts": {}
+    "facts": {
+        "project": "I am building Partner AI using Flask"
+    }
 }

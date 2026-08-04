@@ -1,0 +1,122 @@
+[
+    {
+        "question": "what is software development",
+        "answer": "Software development is the process of designing, creating, testing, and maintaining computer programs and applications."
+    },
+    {
+        "question": "what is frontend development",
+        "answer": "Frontend development focuses on creating the user interface and visual parts of websites and applications."
+    },
+    {
+        "question": "what is backend development",
+        "answer": "Backend development focuses on servers, databases, APIs, and the logic that powers applications."
+    },
+    {
+        "question": "what is full stack development",
+        "answer": "Full stack development involves working with both frontend and backend parts of an application."
+    },
+    {
+        "question": "what is web development",
+        "answer": "Web development is the process of creating and maintaining websites and web applications."
+    },
+    {
+        "question": "what is framework",
+        "answer": "A framework is a collection of tools and libraries that helps developers build applications faster."
+    },
+    {
+        "question": "what is library",
+        "answer": "A library is a collection of reusable code that developers can use to add functionality to programs."
+    },
+    {
+        "question": "what is react",
+        "answer": "React is a JavaScript library used for building interactive user interfaces."
+    },
+    {
+        "question": "what is node js",
+        "answer": "Node.js is a runtime environment that allows JavaScript to run outside the browser."
+    },
+    {
+        "question": "what is django",
+        "answer": "Django is a Python web framework used for building secure and scalable web applications."
+    },
+    {
+        "question": "what is rest api",
+        "answer": "REST API is a method of communication between applications using HTTP requests and responses."
+    },
+    {
+        "question": "what is endpoint",
+        "answer": "An endpoint is a specific URL where an API can receive requests or provide responses."
+    },
+    {
+        "question": "what is localhost",
+        "answer": "Localhost refers to the current device being used to run a service or application locally."
+    },
+    {
+        "question": "what is server",
+        "answer": "A server is a computer or program that provides services or resources to other computers."
+    },
+    {
+        "question": "what is client",
+        "answer": "A client is a device or application that requests services from a server."
+    },
+    {
+        "question": "what is terminal",
+        "answer": "A terminal is a text-based interface used to interact with a computer through commands."
+    },
+    {
+        "question": "what is command line",
+        "answer": "The command line is an interface where users control a computer by entering commands."
+    },
+    {
+        "question": "what is linux terminal",
+        "answer": "Linux terminal is a command-line interface used to manage Linux systems."
+    },
+    {
+        "question": "what is termux",
+        "answer": "Termux is an Android application that provides a Linux-like terminal environment."
+    },
+    {
+        "question": "what is bash",
+        "answer": "Bash is a command-line shell used in many Linux and Unix systems."
+    },
+    {
+        "question": "what is shell script",
+        "answer": "A shell script is a file containing commands that can be executed automatically by a shell."
+    },
+    {
+        "question": "what is package manager",
+        "answer": "A package manager is a tool used to install, update, and manage software packages."
+    },
+    {
+        "question": "what is pip",
+        "answer": "pip is a package manager used to install Python libraries and packages."
+    },
+    {
+        "question": "what is npm",
+        "answer": "npm is a package manager used for JavaScript and Node.js projects."
+    },
+    {
+        "question": "what is virtual environment python",
+        "answer": "A Python virtual environment creates an isolated environment for installing project-specific packages."
+    },
+    {
+        "question": "what is debugging in programming",
+        "answer": "Debugging is the process of identifying and fixing errors in software code."
+    },
+    {
+        "question": "what is syntax error",
+        "answer": "A syntax error occurs when code violates the rules of a programming language."
+    },
+    {
+        "question": "what is indentation error python",
+        "answer": "An indentation error occurs when Python code has incorrect spacing or block alignment."
+    },
+    {
+        "question": "what is json file",
+        "answer": "A JSON file stores structured data using key-value pairs and arrays."
+    },
+    {
+        "question": "what is configuration file",
+        "answer": "A configuration file stores settings and options used by a program."
+    }
+]

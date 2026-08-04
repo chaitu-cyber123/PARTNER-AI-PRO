@@ -1,0 +1,14 @@
+[
+    {
+        "question": "what is python",
+        "answer": "Python is a high-level programming language."
+    },
+    {
+        "question": "what is c++",
+        "answer": "C++ is a programming language."
+    },
+    {
+        "question": "what is java",
+        "answer": "Java is a high-level programming language."
+    }
+]

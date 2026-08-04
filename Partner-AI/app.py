@@ -1,13 +1,11 @@
 
 from flask import Flask, render_template, request, jsonify
-
-from ai.brain import ask
+from kernel.kernel import kernel
 from skills.router import handle_command
 
 from services.boot import boot_sequence
 from services.startup import startup_message
 from services.reminder_service import start_reminder_service
-from ai.vision import analyze_image
 import subprocess
 import json
 import time
@@ -170,11 +168,9 @@ def chat():
 
         return jsonify({
 
-            "reply":
-            ask(message)
+            "reply": kernel.run(message)
 
         })
-
 
     if isinstance(result, dict):
 
@@ -197,10 +193,10 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 def upload_image():
 
     if "image" not in request.files:
-        return {
+        return jsonify({
             "success": False,
             "error": "No image received"
-        }
+        })
 
     image = request.files["image"]
 
@@ -211,18 +207,21 @@ def upload_image():
 
     image.save(path)
 
-    result = analyze_image(
-        path,
-        "You are Partner AI vision system. Analyze this image. Start with 'I can see'. Keep the response concise."
+    prompt = request.form.get(
+        "prompt",
+        "What do you see in this image?"
     )
 
-    return {
+    result = ask(
+        prompt,
+        image_path=path
+    )
+
+    return jsonify({
         "success": True,
         "filename": image.filename,
         "analysis": result
-    }
-
-
+    })
 @app.route("/notifications")
 def notifications():
 

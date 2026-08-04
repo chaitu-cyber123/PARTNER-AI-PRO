@@ -1,0 +1,122 @@
+[
+    {
+        "question": "what is an ai assistant",
+        "answer": "An AI assistant is a software system that helps users by understanding requests, answering questions, and performing tasks using artificial intelligence."
+    },
+    {
+        "question": "what is a voice assistant",
+        "answer": "A voice assistant is an AI system that accepts spoken commands and responds using speech."
+    },
+    {
+        "question": "what is personal ai",
+        "answer": "Personal AI is an AI assistant customized for an individual user's needs, preferences, and workflows."
+    },
+    {
+        "question": "what is automation",
+        "answer": "Automation is the use of technology to complete tasks automatically with reduced human effort."
+    },
+    {
+        "question": "what is task automation",
+        "answer": "Task automation uses software tools to perform repetitive tasks automatically."
+    },
+    {
+        "question": "what is smart assistant",
+        "answer": "A smart assistant is a system that uses AI to understand commands and provide useful actions or information."
+    },
+    {
+        "question": "what is speech recognition",
+        "answer": "Speech recognition converts human voice into text or computer commands."
+    },
+    {
+        "question": "what is text to speech",
+        "answer": "Text to speech converts written text into spoken audio using computer-generated voices."
+    },
+    {
+        "question": "what is natural conversation ai",
+        "answer": "Natural conversation AI allows computers to communicate with humans using human-like language."
+    },
+    {
+        "question": "what is memory in ai assistant",
+        "answer": "Memory in an AI assistant allows it to store and recall useful information from previous interactions."
+    },
+    {
+        "question": "what is context in ai",
+        "answer": "Context in AI is information about previous messages or situations that helps generate relevant responses."
+    },
+    {
+        "question": "what is ai agent",
+        "answer": "An AI agent is a system that can observe information, make decisions, and perform actions to achieve goals."
+    },
+    {
+        "question": "what is autonomous ai",
+        "answer": "Autonomous AI can perform tasks independently with minimal human input."
+    },
+    {
+        "question": "what is multimodal ai",
+        "answer": "Multimodal AI can understand and process multiple types of information such as text, images, audio, and video."
+    },
+    {
+        "question": "what is computer vision",
+        "answer": "Computer vision enables AI systems to understand and analyze visual information from images and videos."
+    },
+    {
+        "question": "what is image recognition",
+        "answer": "Image recognition is an AI technology that identifies objects, patterns, or information in images."
+    },
+    {
+        "question": "what is voice command",
+        "answer": "A voice command is an instruction given to a device through spoken words."
+    },
+    {
+        "question": "what is wake word",
+        "answer": "A wake word is a specific phrase used to activate a voice assistant."
+    },
+    {
+        "question": "what is chatbot architecture",
+        "answer": "Chatbot architecture usually contains input processing, intent detection, reasoning, knowledge retrieval, response generation, and output systems."
+    },
+    {
+        "question": "what is intent detection",
+        "answer": "Intent detection identifies what a user wants to do from their message."
+    },
+    {
+        "question": "what is skill system in ai",
+        "answer": "A skill system allows an AI assistant to perform specific actions such as weather, reminders, calculations, and file operations."
+    },
+    {
+        "question": "what is knowledge base",
+        "answer": "A knowledge base is a structured collection of information that an AI system can search to answer questions."
+    },
+    {
+        "question": "what is retrieval system",
+        "answer": "A retrieval system finds relevant information from stored data and provides it to an application."
+    },
+    {
+        "question": "what is local ai",
+        "answer": "Local AI runs artificial intelligence systems on a user's own device instead of relying on remote servers."
+    },
+    {
+        "question": "what is offline ai",
+        "answer": "Offline AI works without an internet connection by using locally stored models or knowledge."
+    },
+    {
+        "question": "what is jarvis ai",
+        "answer": "JARVIS is a fictional AI assistant from Iron Man that inspired many real-world personal assistant projects."
+    },
+    {
+        "question": "what is hud interface",
+        "answer": "HUD stands for Heads-Up Display. It shows important information in a visual interface without interrupting the user's workflow."
+    },
+    {
+        "question": "what is reminder system",
+        "answer": "A reminder system stores scheduled tasks and alerts users at the appropriate time."
+    },
+    {
+        "question": "what is notification system",
+        "answer": "A notification system sends alerts or messages to inform users about events or updates."
+    },
+    {
+        "question": "what is personal assistant software",
+        "answer": "Personal assistant software helps users manage information, tasks, communication, and daily activities."
+    }
+]

@@ -1,17 +1,16 @@
-from ai.brain import ask
-
-
 def summarize_news(headlines):
-    prompt = f"""
-Summarize these news headlines in a simple way.
-Give a short 3-4 line explanation.
-
-Headlines:
-{headlines}
-"""
 
     try:
-        return ask(prompt)
+
+        if isinstance(headlines, list):
+
+            return "\n".join(
+                f"• {item}"
+                for item in headlines[:5]
+            )
+
+        return str(headlines)
 
     except Exception:
-        return headlines
+
+        return str(headlines)

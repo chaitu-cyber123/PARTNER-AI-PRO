@@ -1,0 +1,122 @@
+[
+    {
+        "question": "what is python indentation error",
+        "answer": "A Python indentation error happens when code blocks do not have correct spacing. Python uses indentation to define program structure."
+    },
+    {
+        "question": "what is syntax error in python",
+        "answer": "A syntax error occurs when Python code breaks the rules of the language and cannot be interpreted."
+    },
+    {
+        "question": "what is module not found error",
+        "answer": "ModuleNotFoundError occurs when Python cannot find an imported module or package."
+    },
+    {
+        "question": "how to fix module not found error",
+        "answer": "Install the missing package, check the module name, and verify that the correct Python environment is being used."
+    },
+    {
+        "question": "what is keyerror in python",
+        "answer": "KeyError occurs when Python tries to access a dictionary key that does not exist."
+    },
+    {
+        "question": "what is typeerror in python",
+        "answer": "TypeError occurs when an operation is performed on an incorrect data type."
+    },
+    {
+        "question": "what is nameerror in python",
+        "answer": "NameError occurs when Python cannot find a variable or function with the given name."
+    },
+    {
+        "question": "what is file not found error",
+        "answer": "FileNotFoundError occurs when a program tries to access a file that does not exist at the specified location."
+    },
+    {
+        "question": "what is json decode error",
+        "answer": "JSONDecodeError occurs when a JSON file has invalid formatting or syntax."
+    },
+    {
+        "question": "how to fix invalid json",
+        "answer": "Check commas, brackets, quotes, and ensure objects and arrays are properly closed."
+    },
+    {
+        "question": "what is flask",
+        "answer": "Flask is a lightweight Python framework used to create web applications and APIs."
+    },
+    {
+        "question": "what is flask route",
+        "answer": "A Flask route connects a URL path to a Python function that handles requests."
+    },
+    {
+        "question": "what is flask internal server error",
+        "answer": "A Flask internal server error usually means an exception occurred inside the application code."
+    },
+    {
+        "question": "how to debug flask error",
+        "answer": "Check the Flask terminal traceback, identify the file and line number, then fix the reported issue."
+    },
+    {
+        "question": "what is localhost 5000",
+        "answer": "Port 5000 is commonly used by Flask development servers to run local web applications."
+    },
+    {
+        "question": "what is api error",
+        "answer": "An API error occurs when communication between applications fails due to invalid requests, server problems, or configuration issues."
+    },
+    {
+        "question": "what is import error",
+        "answer": "ImportError occurs when Python cannot import a required module, function, or class."
+    },
+    {
+        "question": "what is virtual environment",
+        "answer": "A virtual environment creates an isolated Python workspace with separate packages and dependencies."
+    },
+    {
+        "question": "what is requirements txt",
+        "answer": "requirements.txt is a file that lists Python packages needed for a project."
+    },
+    {
+        "question": "what is pip install",
+        "answer": "pip install is a command used to download and install Python packages."
+    },
+    {
+        "question": "what is termux",
+        "answer": "Termux is an Android terminal application that provides a Linux environment for running commands and programming tools."
+    },
+    {
+        "question": "how to update termux packages",
+        "answer": "Termux packages can be updated using the package manager commands provided by Termux."
+    },
+    {
+        "question": "what is permission denied error",
+        "answer": "Permission denied means a user or program does not have required access rights for an operation."
+    },
+    {
+        "question": "what is path error",
+        "answer": "A path error occurs when a program cannot locate a file or folder because the location is incorrect."
+    },
+    {
+        "question": "what is git error",
+        "answer": "Git errors occur when repository operations fail due to authentication, conflicts, or configuration problems."
+    },
+    {
+        "question": "what is merge conflict",
+        "answer": "A merge conflict occurs when Git cannot automatically combine changes from different versions of files."
+    },
+    {
+        "question": "what is backup in software",
+        "answer": "A backup is a copy of important files or data used to restore information if the original is lost."
+    },
+    {
+        "question": "what is debugging",
+        "answer": "Debugging is the process of finding, analyzing, and fixing problems in software."
+    },
+    {
+        "question": "what is logging",
+        "answer": "Logging records system events and messages to help monitor and debug applications."
+    },
+    {
+        "question": "what is exception handling",
+        "answer": "Exception handling allows programs to manage errors safely without crashing unexpectedly."
+    }
+]

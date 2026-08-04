@@ -1,14 +1,12 @@
-const input =
-document.getElementById("message");
-
-
-const chat =
-document.getElementById("chat-box");
-
-
+const input = document.getElementById("message");
+const chat = document.getElementById("chat-box");
 const orb = document.getElementById("orb");
 
+let currentSpeech = null;
+
+
 function setOrbState(state){
+
     if(!orb) return;
 
     orb.classList.remove(
@@ -17,24 +15,87 @@ function setOrbState(state){
         "thinking",
         "speaking"
     );
-const listen = document.getElementById("listen-state");
-const think = document.getElementById("think-state");
-const response = document.getElementById("response-state");
 
-if(listen)
-    listen.textContent =
-        "LISTENING : " + (state==="listening" ? "TRUE" : "FALSE");
-
-if(think)
-    think.textContent =
-        "THINKING : " + (state==="thinking" ? "TRUE" : "FALSE");
-
-if(response)
-    response.textContent =
-        "STATUS : " + state.toUpperCase();
     orb.classList.add(state);
+
+
+    const listen = document.getElementById("listen-state");
+    const think = document.getElementById("think-state");
+    const response = document.getElementById("response-state");
+
+
+    if(listen)
+        listen.textContent =
+        "LISTENING : " + (state==="listening" ? "TRUE":"FALSE");
+
+
+    if(think)
+        think.textContent =
+        "THINKING : " + (state==="thinking" ? "TRUE":"FALSE");
+
+
+    if(response)
+        response.textContent =
+        "STATUS : " + state.toUpperCase();
 }
-function addMessage(sender, text){
+
+
+
+function stopSpeaking(){
+
+    if(window.speechSynthesis){
+
+        speechSynthesis.pause();
+
+        speechSynthesis.cancel();
+
+        speechSynthesis.resume();
+
+    }
+
+    currentSpeech = null;
+
+    setOrbState("idle");
+}
+
+
+function speak(text){
+
+    speechSynthesis.pause();
+    speechSynthesis.cancel();
+
+    currentSpeech =
+    new SpeechSynthesisUtterance(text);
+
+    speechSynthesis.resume();
+
+    currentSpeech.rate = 1;
+    currentSpeech.pitch = 1;
+
+
+    currentSpeech.onstart = ()=>{
+
+        setOrbState("speaking");
+
+    };
+
+
+    currentSpeech.onend = ()=>{
+
+        setOrbState("idle");
+
+    };
+
+
+    speechSynthesis.speak(currentSpeech);
+
+}
+
+
+
+function addMessage(sender,text){
+
+    if(!chat) return;
 
 
     const msg =
@@ -51,85 +112,107 @@ function addMessage(sender, text){
     chat.scrollTop =
     chat.scrollHeight;
 
-
 }
+
 
 
 
 async function sendMessage(){
 
-
     const message =
     input.value.trim();
 
 
-
     if(message === ""){
-
         return;
-
     }
 
 
+    // instant stop command
 
-    addMessage("YOU", message);
+    if(message.toLowerCase() === "stop"){
+        console.log("STOP COMMAND RECEIVED");
+        stopSpeaking();
+
+        addMessage(
+            "YOU",
+            "Stop"
+        );
+
+        input.value="";
+
+        return;
+    }
+
+
+    // New question interrupts old answer
+
+    stopSpeaking();
+
+
+    addMessage(
+        "YOU",
+        message
+    );
 
 
     input.value="";
 
 
-
     try{
 
-setOrbState("thinking");
+
+        setOrbState("thinking");
+
+
         const response =
         await fetch("/chat",{
 
-
             method:"POST",
 
-
             headers:{
-
 
                 "Content-Type":
                 "application/json"
 
-
             },
-
 
             body:JSON.stringify({
 
-
                 message:message
 
-
             })
-
 
         });
 
 
-setOrbState("speaking");
-     const data = await response.json();
 
-addMessage(
-    "PARTNER",
-    data.reply || "READY"
-);
+        const data =
+        await response.json();
 
-if (data.action === "open_url") {
-    window.open(data.url, "_blank");
-}
-// Speak through the browser
-const speech = new SpeechSynthesisUtterance(
-    data.reply || "READY"
-);
-speechSynthesis.speak(speech);
-setTimeout(()=>{
-    setOrbState("idle");
-},1500);
+
+
+        addMessage(
+            "PARTNER",
+            data.reply || "READY"
+        );
+
+
+
+        if(data.action === "open_url"){
+
+            window.open(
+                data.url,
+                "_blank"
+            );
+
+        }
+
+
+        speak(
+            data.reply || "READY"
+        );
+
 
 
     }
@@ -137,96 +220,155 @@ setTimeout(()=>{
 
     catch(error){
 
+
         addMessage(
-
             "SYSTEM",
-
             "CONNECTION ERROR"
-
         );
 
-setOrbState("idle");
+
+        setOrbState("idle");
+
     }
 
-
 }
-
 
 
 
 
 if(input){
 
-
     input.addEventListener(
+        "keydown",
+        function(event){
 
-    "keydown",
+            if(event.key==="Enter"){
 
-    function(event){
+                sendMessage();
 
-
-        if(event.key === "Enter"){
-
-
-            sendMessage();
-
+            }
 
         }
-
-
-    });
-
+    );
 
 }
+
+
+
+
+
+// Voice Recognition
+
+
 const SpeechRecognition =
-    window.SpeechRecognition || window.webkitSpeechRecognition;
+window.SpeechRecognition ||
+window.webkitSpeechRecognition;
 
-if (SpeechRecognition) {
 
-    const recognition = new SpeechRecognition();
 
-    recognition.lang = "en-US";
-    recognition.interimResults = false;
-    recognition.continuous = false;
+if(SpeechRecognition){
 
-    const micBtn = document.getElementById("mic-btn");
 
-    micBtn.addEventListener("click", () => {
-        setOrbState("listening");
-        recognition.start();
-    });
+    const recognition =
+    new SpeechRecognition();
 
-    recognition.onresult = (event) => {
-        input.value = event.results[0][0].transcript;
+
+    recognition.lang =
+    "en-US";
+
+
+    recognition.interimResults =
+    false;
+
+
+    recognition.continuous =
+    false;
+
+
+
+    const micBtn =
+    document.getElementById("mic-btn");
+
+
+
+    if(micBtn){
+
+        micBtn.addEventListener(
+            "click",
+            ()=>{
+
+
+                stopSpeaking();
+
+
+                setOrbState(
+                    "listening"
+                );
+
+
+                recognition.start();
+
+
+            }
+        );
+
+    }
+
+
+
+
+    recognition.onresult =
+    (event)=>{
+
+
+        input.value =
+        event.results[0][0].transcript;
+
+
         sendMessage();
+
+
     };
 
-    recognition.onend = () => {
+
+
+    recognition.onend =
+    ()=>{
+
         setOrbState("idle");
+
     };
 
-    recognition.onerror = () => {
+
+    recognition.onerror =
+    ()=>{
+
         setOrbState("idle");
+
     };
-
-} else {
-
-    alert("Speech Recognition is not supported in this browser.");
 
 }
+// Core Status
+
 async function loadCoreStatus(){
 
     try{
 
         const response =
         await fetch("/chat",{
+
             method:"POST",
+
             headers:{
                 "Content-Type":"application/json"
             },
+
             body:JSON.stringify({
+
                 message:"partner status"
+
             })
+
         });
 
 
@@ -235,79 +377,121 @@ async function loadCoreStatus(){
 
 
         const panel =
-        document.getElementById("core-status");
+        document.getElementById(
+            "core-status"
+        );
 
 
         if(panel){
-            panel.textContent = data.reply;
+
+            panel.textContent =
+            data.reply;
+
         }
+
 
     }
 
     catch(error){
 
-        console.log(error);
+        console.log(
+            "STATUS ERROR",
+            error
+        );
 
     }
 
 }
 
 
+
+
 window.addEventListener(
     "load",
     loadCoreStatus
 );
+
+
+
+
+// System Status Panel
+
+
 async function updateCoreStatus(){
+
 
     try{
 
+
         const response =
         await fetch("/status");
+
 
         const data =
         await response.json();
 
 
+
         const cpu =
         document.getElementById("cpu");
 
+
         const ram =
         document.getElementById("ram");
-const battery =
-document.getElementById("battery");
+
+
+        const battery =
+        document.getElementById("battery");
+
 
         const clock =
         document.getElementById("clock");
 
+
         const clock2 =
         document.getElementById("clock2");
 
+
         const mobileClock =
-        document.getElementById("clock-mobile");
+        document.getElementById(
+            "clock-mobile"
+        );
+
 
 
         if(cpu)
-            cpu.textContent = data.cpu + "%";
+            cpu.textContent =
+            data.cpu + "%";
 
 
         if(ram)
-            ram.textContent = data.ram + "%";
-if(battery)
-    battery.textContent = data.battery + "%";
+            ram.textContent =
+            data.ram + "%";
+
+
+        if(battery)
+            battery.textContent =
+            data.battery + "%";
+
 
         if(clock)
-            clock.textContent = data.time;
+            clock.textContent =
+            data.time;
 
 
         if(clock2)
-            clock2.textContent = data.time;
+            clock2.textContent =
+            data.time;
 
 
         if(mobileClock)
-            mobileClock.textContent = data.time;
+            mobileClock.textContent =
+            data.time;
+
 
 
     }
+
 
     catch(error){
 
@@ -321,6 +505,7 @@ if(battery)
 }
 
 
+
 setInterval(
     updateCoreStatus,
     3000
@@ -328,40 +513,72 @@ setInterval(
 
 
 updateCoreStatus();
+
+
+
+
+// Notifications
+
+
 let lastNotificationTime = "";
+
+
+
 async function checkNotifications(){
+
 
     try{
 
-        const response = await fetch("/notifications");
-        const data = await response.json();
+
+        const response =
+        await fetch(
+            "/notifications"
+        );
+
+
+        const data =
+        await response.json();
+
+
 
         if(data.length > 0){
 
-    const latest = data[data.length - 1];
 
-    if(latest.time !== lastNotificationTime){
+            const latest =
+            data[data.length-1];
 
-        lastNotificationTime = latest.time;
 
-        addMessage(
-            "🔔 PARTNER",
-            latest.message
-        );
 
-        const speech =
-        new SpeechSynthesisUtterance(
-            latest.message
-        );
+            if(
+                latest.time !==
+                lastNotificationTime
+            ){
 
-        speech.rate = 1;
-        speech.pitch = 1;
 
-        speechSynthesis.speak(speech);
+                lastNotificationTime =
+                latest.time;
+
+
+
+                addMessage(
+                    "🔔 PARTNER",
+                    latest.message
+                );
+
+
+
+                speak(
+                    latest.message
+                );
+
+            }
+
+        }
+
+
     }
-}
 
-    }
+
     catch(error){
 
         console.log(
@@ -374,61 +591,164 @@ async function checkNotifications(){
 }
 
 
+
 setInterval(
     checkNotifications,
     5000
 );
 
-async function uploadImage() {
 
-    const input = document.getElementById("image-input");
 
-    if (!input.files.length) return;
 
-    const formData = new FormData();
 
-    formData.append("image", input.files[0]);
 
-    try {
+// Image Upload
 
-        const response = await fetch("/upload", {
-            method: "POST",
-            body: formData
-        });
 
-        const result = await response.json();
+async function uploadImage(){
 
-if (result.success) {
 
-    const imageURL = URL.createObjectURL(input.files[0]);
+    const imageInput =
+    document.getElementById(
+        "image-input"
+    );
+
+
+    if(
+        !imageInput.files.length
+    ){
+
+        return;
+
+    }
+
+
+
+    stopSpeaking();
+
+
+
+    const file =
+    imageInput.files[0];
+
+
+
+    const formData =
+    new FormData();
+
+
+
+    formData.append(
+        "image",
+        file
+    );
+
+
+
+    const messageInput =
+    document.getElementById(
+        "message"
+    );
+
+
+
+    let question =
+    messageInput.value.trim();
+
+
+
+    if(question===""){
+
+        question =
+        "What do you see in this image?";
+
+    }
+
+
+
+    formData.append(
+        "prompt",
+        question
+    );
+
+
+
+    const imageURL =
+    URL.createObjectURL(file);
+
+
 
     addMessage(
         "👤 YOU",
-        `<img src="${imageURL}" class="chat-image">`
+        `<br><img src="${imageURL}" class="chat-image">`
     );
+
+
 
     addMessage(
         "👁️ PARTNER",
-        result.analysis || "Image received"
+        "Thinking..."
     );
-            const speech = new SpeechSynthesisUtterance(
-                result.analysis || "Image received"
-            );
 
-            speechSynthesis.speak(speech);
 
-        } else {
 
-            addMessage(
-                "SYSTEM",
-                "Image upload failed"
-            );
+    try{
 
-        }
 
-    } catch(error) {
+        const response =
+        await fetch(
+            "/upload",
+            {
+                method:"POST",
+                body:formData
+            }
+        );
 
-        console.log("IMAGE ERROR", error);
+
+
+        const result =
+        await response.json();
+
+
+
+        const answer =
+        result.analysis ||
+        "Image received";
+
+
+
+        addMessage(
+            "👁️ PARTNER",
+            answer
+        );
+
+
+
+        speak(answer);
+
+
+
+        messageInput.value="";
+
+        imageInput.value="";
+
+
+
+    }
+
+
+    catch(error){
+
+
+        addMessage(
+            "SYSTEM",
+            "Image upload failed."
+        );
+
+
+        console.log(
+            error
+        );
 
     }
 

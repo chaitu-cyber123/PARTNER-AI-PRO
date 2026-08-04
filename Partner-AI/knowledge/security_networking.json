@@ -1,0 +1,122 @@
+[
+    {
+        "question": "what is cybersecurity",
+        "answer": "Cybersecurity is the practice of protecting computers, networks, applications, and data from digital threats."
+    },
+    {
+        "question": "what is ethical hacking",
+        "answer": "Ethical hacking is authorized security testing performed to find and fix vulnerabilities."
+    },
+    {
+        "question": "what is hacker",
+        "answer": "A hacker is a person who uses technical skills to analyze, modify, or access computer systems."
+    },
+    {
+        "question": "what is white hat hacker",
+        "answer": "A white hat hacker is a security professional who finds vulnerabilities legally to improve security."
+    },
+    {
+        "question": "what is black hat hacker",
+        "answer": "A black hat hacker is someone who uses hacking skills for malicious or illegal activities."
+    },
+    {
+        "question": "what is vulnerability",
+        "answer": "A vulnerability is a weakness in software, hardware, or systems that can be exploited."
+    },
+    {
+        "question": "what is exploit",
+        "answer": "An exploit is a method or code that takes advantage of a security vulnerability."
+    },
+    {
+        "question": "what is virus",
+        "answer": "A virus is a type of malicious software that can replicate and damage computer systems."
+    },
+    {
+        "question": "what is trojan",
+        "answer": "A trojan is malicious software that disguises itself as a legitimate program."
+    },
+    {
+        "question": "what is ransomware",
+        "answer": "Ransomware is malware that blocks access to data and demands payment to restore access."
+    },
+    {
+        "question": "what is phishing",
+        "answer": "Phishing is a technique where attackers attempt to steal information by pretending to be trustworthy sources."
+    },
+    {
+        "question": "what is encryption",
+        "answer": "Encryption protects information by converting readable data into coded form."
+    },
+    {
+        "question": "what is decryption",
+        "answer": "Decryption converts encrypted data back into readable information."
+    },
+    {
+        "question": "what is cryptography",
+        "answer": "Cryptography is the science of protecting information using mathematical techniques."
+    },
+    {
+        "question": "what is vpn",
+        "answer": "VPN stands for Virtual Private Network. It creates a secure connection over the internet."
+    },
+    {
+        "question": "what is proxy server",
+        "answer": "A proxy server acts as an intermediary between a user and the internet."
+    },
+    {
+        "question": "what is firewall",
+        "answer": "A firewall monitors and controls network traffic based on security rules."
+    },
+    {
+        "question": "what is router",
+        "answer": "A router is a device that forwards data between different networks."
+    },
+    {
+        "question": "what is switch",
+        "answer": "A switch connects devices inside a local network and forwards data between them."
+    },
+    {
+        "question": "what is tcp",
+        "answer": "TCP stands for Transmission Control Protocol. It provides reliable communication between devices."
+    },
+    {
+        "question": "what is udp",
+        "answer": "UDP stands for User Datagram Protocol. It provides faster communication without guaranteeing delivery."
+    },
+    {
+        "question": "what is port number",
+        "answer": "A port number identifies a specific service or application running on a network device."
+    },
+    {
+        "question": "what is mac address",
+        "answer": "A MAC address is a unique hardware identifier assigned to a network interface."
+    },
+    {
+        "question": "what is ipv4",
+        "answer": "IPv4 is a version of the Internet Protocol that uses 32-bit addresses."
+    },
+    {
+        "question": "what is ipv6",
+        "answer": "IPv6 is a newer Internet Protocol version that uses larger 128-bit addresses."
+    },
+    {
+        "question": "what is ssh",
+        "answer": "SSH is a secure protocol used to remotely access and manage computers."
+    },
+    {
+        "question": "what is linux security",
+        "answer": "Linux security includes permissions, user management, updates, and security tools used to protect Linux systems."
+    },
+    {
+        "question": "what is authentication",
+        "answer": "Authentication verifies the identity of a user or system."
+    },
+    {
+        "question": "what is authorization",
+        "answer": "Authorization determines what resources an authenticated user can access."
+    },
+    {
+        "question": "what is two factor authentication",
+        "answer": "Two-factor authentication adds an extra verification step to improve account security."
+    }
+]

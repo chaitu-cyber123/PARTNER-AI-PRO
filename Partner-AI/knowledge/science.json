@@ -1,0 +1,122 @@
+[
+    {
+        "question": "what is science",
+        "answer": "Science is the systematic study of the natural world through observation, experiments, and evidence."
+    },
+    {
+        "question": "what is physics",
+        "answer": "Physics is the branch of science that studies matter, energy, motion, forces, and the laws of nature."
+    },
+    {
+        "question": "what is chemistry",
+        "answer": "Chemistry is the branch of science that studies substances, their properties, and how they interact."
+    },
+    {
+        "question": "what is biology",
+        "answer": "Biology is the study of living organisms and their structures, functions, and interactions."
+    },
+    {
+        "question": "what is gravity",
+        "answer": "Gravity is a force that attracts objects with mass toward each other."
+    },
+    {
+        "question": "what is force",
+        "answer": "Force is a push or pull that can change the motion or shape of an object."
+    },
+    {
+        "question": "what is energy",
+        "answer": "Energy is the ability to do work or cause change."
+    },
+    {
+        "question": "what is motion",
+        "answer": "Motion is the change in position of an object over time."
+    },
+    {
+        "question": "what is speed",
+        "answer": "Speed is the distance traveled by an object per unit of time."
+    },
+    {
+        "question": "what is acceleration",
+        "answer": "Acceleration is the rate of change of velocity over time."
+    },
+    {
+        "question": "what is newtons first law",
+        "answer": "Newton's first law states that an object remains at rest or in uniform motion unless acted upon by an external force."
+    },
+    {
+        "question": "what is newtons second law",
+        "answer": "Newton's second law states that force equals mass multiplied by acceleration."
+    },
+    {
+        "question": "what is newtons third law",
+        "answer": "Newton's third law states that every action has an equal and opposite reaction."
+    },
+    {
+        "question": "what is atom",
+        "answer": "An atom is the smallest unit of an element that retains its chemical properties."
+    },
+    {
+        "question": "what is molecule",
+        "answer": "A molecule is a group of two or more atoms chemically bonded together."
+    },
+    {
+        "question": "what is electricity",
+        "answer": "Electricity is the movement or presence of electric charge."
+    },
+    {
+        "question": "what is voltage",
+        "answer": "Voltage is the electrical potential difference that pushes electric current through a circuit."
+    },
+    {
+        "question": "what is current",
+        "answer": "Electric current is the flow of electric charge through a conductor."
+    },
+    {
+        "question": "what is universe",
+        "answer": "The universe includes all space, time, matter, energy, galaxies, and everything that exists."
+    },
+    {
+        "question": "what is galaxy",
+        "answer": "A galaxy is a large collection of stars, gas, dust, and dark matter held together by gravity."
+    },
+    {
+        "question": "what is milky way",
+        "answer": "The Milky Way is the galaxy that contains our Solar System."
+    },
+    {
+        "question": "what is solar system",
+        "answer": "The Solar System consists of the Sun and all objects that orbit it, including planets, moons, and asteroids."
+    },
+    {
+        "question": "what is earth",
+        "answer": "Earth is the third planet from the Sun and the only known planet with life."
+    },
+    {
+        "question": "what is sun",
+        "answer": "The Sun is a star at the center of our Solar System that provides light and energy to Earth."
+    },
+    {
+        "question": "what is moon",
+        "answer": "The Moon is Earth's natural satellite that orbits our planet."
+    },
+    {
+        "question": "what is mathematics",
+        "answer": "Mathematics is the study of numbers, patterns, structures, and relationships using logic."
+    },
+    {
+        "question": "what is algebra",
+        "answer": "Algebra is a branch of mathematics that uses symbols and equations to represent relationships."
+    },
+    {
+        "question": "what is geometry",
+        "answer": "Geometry is the branch of mathematics that studies shapes, sizes, angles, and spaces."
+    },
+    {
+        "question": "what is calculus",
+        "answer": "Calculus is a branch of mathematics that studies change using concepts such as derivatives and integrals."
+    },
+    {
+        "question": "what is probability",
+        "answer": "Probability is the mathematical measure of how likely an event is to happen."
+    }
+]

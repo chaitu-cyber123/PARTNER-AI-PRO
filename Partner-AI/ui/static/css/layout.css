@@ -42,9 +42,9 @@ body{
     display:grid;
 
     grid-template-columns:
-        440px
-        1fr
-        260px;
+        500px
+        2fr
+        220px;
      min-height:0;
     gap:25px;
 
@@ -76,7 +76,7 @@ max-height:120px;
     justify-content:flex-end;
     gap:10px;
     padding:10px 20px;
-    min-height:90px;
+    min-height:100px;
     overflow:hidden;
 }
 .chat-box{

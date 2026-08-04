@@ -9,6 +9,14 @@ from skills.memory import memory_command
 from skills.status import status_command
 from skills.tasks import task_command
 from skills.reminders import reminder_command
+from skills.datetime import datetime_command
+from skills.converter import converter_command
+from skills.notes import notes_command
+from skills.files import files_command
+
+from core.command_parser import normalize_command
+
+
 def news_command(message):
 
     if "tech news" in message or "technology news" in message:
@@ -35,10 +43,13 @@ def news_command(message):
     return None
 
 
-def handle_command(message):
-    message = message.lower().strip()
 
-    for handler in (
+def handle_command(message):
+
+    message = normalize_command(message)
+
+
+    handlers = (
         system_command,
         browser_command,
         calculator_command,
@@ -50,10 +61,19 @@ def handle_command(message):
         status_command,
         task_command,
         reminder_command,
-    ):
+        datetime_command,
+        converter_command,
+        notes_command,
+        files_command,
+    )
+
+
+    for handler in handlers:
+
         result = handler(message)
 
         if result is not None:
             return result
+
 
     return None

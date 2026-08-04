@@ -117,6 +117,98 @@ def update_profile(key, value):
 def get_profile_value(key):
     profile = get_profile()
     return profile.get(key)
+
+def smart_recall(query):
+
+    query = query.lower().strip()
+
+    memory = load_memory()
+
+    sections = {
+        "profile": memory.get("profile", {}),
+        "preferences": memory.get("preferences", {}),
+        "facts": memory.get("facts", {})
+    }
+
+
+    ignore = {
+        "what",
+        "is",
+        "my",
+        "do",
+        "i",
+        "know",
+        "tell",
+        "me",
+        "remember",
+        "the",
+        "a",
+        "about",
+        "which",
+        "what's",
+        "are"
+    }
+
+
+    query_words = set(
+        query.replace("?", "").split()
+    ) - ignore
+
+
+    best_value = None
+    best_score = 0
+
+
+    for category, items in sections.items():
+
+        for key, value in items.items():
+
+            key_words = set(
+                key.lower().split()
+            )
+
+
+            # Direct keyword match
+
+            score = len(
+                query_words & key_words
+            )
+
+
+            # Semantic shortcuts
+
+            if (
+                "food" in query_words
+                and "favorite" in key_words
+            ):
+                score += 2
+
+
+            if (
+                "like" in query_words
+                and "favorite" in key_words
+            ):
+                score += 2
+
+
+            if (
+                "name" in query_words
+                and key == "name"
+            ):
+                score += 3
+
+
+            if score > best_score:
+
+                best_score = score
+                best_value = value
+
+
+    if best_score > 0:
+        return best_value
+
+
+    return None
 def load_context():
     context_file = os.path.join(DATA_DIR, "context.json")
 

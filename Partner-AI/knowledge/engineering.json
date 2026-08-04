@@ -1,0 +1,122 @@
+[
+    {
+        "question": "what is engineering",
+        "answer": "Engineering is the application of science, mathematics, and technology to design and build solutions to problems."
+    },
+    {
+        "question": "what is computer science engineering",
+        "answer": "Computer Science Engineering is a field that combines computer science principles with engineering to develop software and computing systems."
+    },
+    {
+        "question": "what is mathematics",
+        "answer": "Mathematics is the study of numbers, quantities, structures, patterns, and logical relationships."
+    },
+    {
+        "question": "what is calculus",
+        "answer": "Calculus is a branch of mathematics that studies continuous change using derivatives and integrals."
+    },
+    {
+        "question": "what is derivative",
+        "answer": "A derivative measures the rate at which a quantity changes with respect to another quantity."
+    },
+    {
+        "question": "what is integration",
+        "answer": "Integration is a mathematical process used to find accumulated quantities such as area and volume."
+    },
+    {
+        "question": "what is matrix",
+        "answer": "A matrix is a rectangular arrangement of numbers organized into rows and columns."
+    },
+    {
+        "question": "what is vector",
+        "answer": "A vector is a quantity that has both magnitude and direction."
+    },
+    {
+        "question": "what is probability",
+        "answer": "Probability measures the likelihood of an event occurring."
+    },
+    {
+        "question": "what is statistics",
+        "answer": "Statistics is the science of collecting, analyzing, interpreting, and presenting data."
+    },
+    {
+        "question": "what is digital electronics",
+        "answer": "Digital electronics deals with electronic circuits that process digital signals represented by binary values."
+    },
+    {
+        "question": "what is binary number system",
+        "answer": "The binary number system uses only two digits, 0 and 1, and is used by computers."
+    },
+    {
+        "question": "what is logic gate",
+        "answer": "A logic gate is an electronic circuit that performs logical operations on binary inputs."
+    },
+    {
+        "question": "what is and gate",
+        "answer": "An AND gate produces output 1 only when all inputs are 1."
+    },
+    {
+        "question": "what is or gate",
+        "answer": "An OR gate produces output 1 when at least one input is 1."
+    },
+    {
+        "question": "what is not gate",
+        "answer": "A NOT gate reverses the input value from 0 to 1 or 1 to 0."
+    },
+    {
+        "question": "what is communication system",
+        "answer": "A communication system transfers information from a sender to a receiver through a medium."
+    },
+    {
+        "question": "what is signal",
+        "answer": "A signal is a physical representation of information that can be transmitted or processed."
+    },
+    {
+        "question": "what is analog signal",
+        "answer": "An analog signal is a continuous signal that varies smoothly over time."
+    },
+    {
+        "question": "what is digital signal",
+        "answer": "A digital signal represents information using discrete values, usually binary numbers."
+    },
+    {
+        "question": "what is operating system architecture",
+        "answer": "Operating system architecture describes the design and organization of components inside an operating system."
+    },
+    {
+        "question": "what is kernel",
+        "answer": "The kernel is the core part of an operating system that manages hardware and system resources."
+    },
+    {
+        "question": "what is microkernel",
+        "answer": "A microkernel is an operating system design where only essential services run in the kernel and other services run separately."
+    },
+    {
+        "question": "what is dbms normalization",
+        "answer": "DBMS normalization organizes data into efficient structures to reduce duplication and improve consistency."
+    },
+    {
+        "question": "what is computer network topology",
+        "answer": "Network topology describes the arrangement and connection pattern of devices in a network."
+    },
+    {
+        "question": "what is cloud computing",
+        "answer": "Cloud computing provides computing resources like storage, processing, and applications through internet-based services."
+    },
+    {
+        "question": "what is virtualization",
+        "answer": "Virtualization creates virtual versions of computing resources such as servers, storage, or networks."
+    },
+    {
+        "question": "what is compiler design",
+        "answer": "Compiler design is the study of creating programs that translate source code into machine code."
+    },
+    {
+        "question": "what is operating system scheduling",
+        "answer": "Operating system scheduling decides which processes receive CPU time and in what order."
+    },
+    {
+        "question": "what is deadlock",
+        "answer": "Deadlock is a situation where processes wait indefinitely for resources held by each other."
+    }
+]
