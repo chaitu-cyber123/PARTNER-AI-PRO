@@ -1,4 +1,5 @@
 [
+<<<<<<< HEAD
     {
         "id": 1,
         "title": "study",
@@ -6,4 +7,8 @@
         "created": "2026-07-26 12:18:04",
         "completed": true
     }
+=======
+    "to eat",
+    "to eat dinner at 7:21 p.m."
+>>>>>>> origin/main
 ]

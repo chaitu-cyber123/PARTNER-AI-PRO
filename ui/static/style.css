@@ -1,0 +1,142 @@
+body{
+    margin:0;
+    background:#05070d;
+    color:#00eaff;
+    font-family:Arial,sans-serif;
+    text-align:center;
+}
+
+.header{
+    font-size:38px;
+    font-weight:bold;
+    margin-top:30px;
+    text-shadow:0 0 20px cyan;
+}
+
+.card{
+    width:85%;
+    margin:40px auto;
+    padding:25px;
+    border:2px solid #00eaff;
+    border-radius:20px;
+    box-shadow:0 0 25px rgba(0,234,255,.35);
+}
+#orb{
+    width:180px;
+    height:180px;
+    margin:25px auto;
+    border-radius:50%;
+    background:radial-gradient(circle,#00ffff,#003366);
+    border:3px solid #00ffff;
+    box-shadow:0 0 40px cyan;
+    animation:rotateCore 8s linear infinite,pulse 2s infinite;
+}
+
+@keyframes rotateCore{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+button{
+    padding:14px 24px;
+    font-size:18px;
+    border:none;
+    border-radius:10px;
+    background:#00eaff;
+    cursor:pointer;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+#result{
+    margin-top:30px;
+    font-size:20px;
+    line-height:1.6;
+    min-height:120px;
+}
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+opacity:.7;
+}
+
+50%{
+transform:scale(1.12);
+opacity:1;
+}
+
+100%{
+transform:scale(1);
+opacity:.7;
+}
+}
+#chat{
+    margin-top:25px;
+    height:300px;
+    overflow-y:auto;
+    border:1px solid #00eaff;
+    border-radius:10px;
+    padding:15px;
+    text-align:left;
+    background:#0b1018;
+}
+
+.user{
+    color:#7CFC00;
+    margin:10px 0;
+}
+
+.partner{
+    color:#00eaff;
+    margin:10px 0;
+}
+
+.core{
+    position:relative;
+    width:220px;
+    height:220px;
+    margin:30px auto;
+}
+
+.ring{
+    position:absolute;
+    border:2px solid cyan;
+    border-radius:50%;
+}
+
+.ring1{
+    width:220px;
+    height:220px;
+    animation:spin1 10s linear infinite;
+}
+
+.ring2{
+    width:190px;
+    height:190px;
+    top:15px;
+    left:15px;
+    animation:spin2 6s linear infinite reverse;
+}
+
+#orb{
+    position:absolute;
+    top:20px;
+    left:20px;
+}
+
+@keyframes spin1{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
+
+@keyframes spin2{
+    from{transform:rotate(360deg);}
+    to{transform:rotate(0deg);}
+}

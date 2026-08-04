@@ -1,8 +1,17 @@
 __pycache__/
 *.pyc
+<<<<<<< HEAD
 *.pyo
 uploads/
 *.log
 .env
 data/memory.json
 backups/
+=======
+
+data/memory.json
+
+config.py
+
+.env
+>>>>>>> origin/main
