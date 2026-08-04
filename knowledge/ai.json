@@ -1,0 +1,102 @@
+[
+    {
+        "question": "what is artificial intelligence",
+        "answer": "Artificial Intelligence is the field of computer science that creates systems capable of performing tasks that normally require human intelligence."
+    },
+    {
+        "question": "what is ai",
+        "answer": "AI stands for Artificial Intelligence, a technology that enables machines to simulate human-like intelligence and decision making."
+    },
+    {
+        "question": "what is machine learning",
+        "answer": "Machine learning is a method where computers learn patterns from data and improve their performance without being explicitly programmed for every task."
+    },
+    {
+        "question": "what is supervised learning",
+        "answer": "Supervised learning is a machine learning method where models learn from labeled data containing inputs and correct outputs."
+    },
+    {
+        "question": "what is unsupervised learning",
+        "answer": "Unsupervised learning is a machine learning method where algorithms discover patterns in data without labeled answers."
+    },
+    {
+        "question": "what is reinforcement learning",
+        "answer": "Reinforcement learning is a learning method where an agent learns by interacting with an environment and receiving rewards or penalties."
+    },
+    {
+        "question": "what is deep learning",
+        "answer": "Deep learning uses artificial neural networks with multiple layers to learn complex patterns from large amounts of data."
+    },
+    {
+        "question": "what is neural network",
+        "answer": "A neural network is a computational model inspired by the human brain that consists of connected artificial neurons."
+    },
+    {
+        "question": "what is natural language processing",
+        "answer": "Natural Language Processing allows computers to understand, analyze, and generate human language."
+    },
+    {
+        "question": "what is computer vision",
+        "answer": "Computer vision enables computers to understand and analyze images and videos."
+    },
+    {
+        "question": "what is generative ai",
+        "answer": "Generative AI is artificial intelligence that can create new content such as text, images, audio, and code."
+    },
+    {
+        "question": "what is large language model",
+        "answer": "A large language model is an AI model trained on large amounts of text data to understand and generate human-like language."
+    },
+    {
+        "question": "what is chatbot",
+        "answer": "A chatbot is a software application designed to communicate with users through text or voice."
+    },
+    {
+        "question": "what is virtual assistant",
+        "answer": "A virtual assistant is an AI-powered system that helps users perform tasks using voice or text commands."
+    },
+    {
+        "question": "what is robotics",
+        "answer": "Robotics is the field of engineering and computer science focused on designing and building robots."
+    },
+    {
+        "question": "what is robot",
+        "answer": "A robot is a programmable machine capable of performing tasks automatically or semi-automatically."
+    },
+    {
+        "question": "what is automation",
+        "answer": "Automation is the use of technology to perform tasks with minimal human intervention."
+    },
+    {
+        "question": "what is computer vision ai",
+        "answer": "Computer vision AI uses artificial intelligence techniques to understand visual information from cameras and images."
+    },
+    {
+        "question": "what is speech recognition",
+        "answer": "Speech recognition is technology that converts spoken words into text or commands."
+    },
+    {
+        "question": "what is speech synthesis",
+        "answer": "Speech synthesis is technology that converts text into human-like speech."
+    },
+    {
+        "question": "what is ai assistant",
+        "answer": "An AI assistant is a software system that helps users by answering questions, performing tasks, and providing information."
+    },
+    {
+        "question": "what is prompt engineering",
+        "answer": "Prompt engineering is the process of designing effective instructions for AI models to get better results."
+    },
+    {
+        "question": "what is hallucination in ai",
+        "answer": "AI hallucination occurs when an AI system generates information that sounds correct but is inaccurate or unsupported."
+    },
+    {
+        "question": "what is model training",
+        "answer": "Model training is the process of teaching an AI model using data so it can recognize patterns and make predictions."
+    },
+    {
+        "question": "what is inference in ai",
+        "answer": "Inference is the process where a trained AI model uses learned patterns to produce outputs from new inputs."
+    }
+]

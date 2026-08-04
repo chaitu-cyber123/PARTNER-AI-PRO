@@ -1,0 +1,122 @@
+[
+    {
+        "question": "what is partner ai",
+        "answer": "Partner AI is a personal AI assistant designed to help users with conversations, information retrieval, automation, reminders, file operations, and intelligent tasks."
+    },
+    {
+        "question": "who created partner ai",
+        "answer": "Partner AI was created by sir Chaitanya as a personal AI assistant project."
+    },
+    {
+        "question": "what is partner ai architecture",
+        "answer": "Partner AI architecture consists of input processing, intent detection, planning, skills, memory, knowledge retrieval, reasoning, response generation, and user interface systems."
+    },
+    {
+        "question": "what is ai brain",
+        "answer": "An AI brain is the central logic system that processes user requests, performs reasoning, accesses knowledge, and generates responses."
+    },
+    {
+        "question": "what is memory system in partner ai",
+        "answer": "The memory system stores and recalls useful information from previous interactions to provide personalized responses."
+    },
+    {
+        "question": "what is knowledge base in partner ai",
+        "answer": "The knowledge base is a collection of question and answer data that Partner AI uses to answer questions without external AI services."
+    },
+    {
+        "question": "what is intent detection in partner ai",
+        "answer": "Intent detection identifies what action the user wants, such as opening files, creating reminders, or having a conversation."
+    },
+    {
+        "question": "what is planner in ai",
+        "answer": "The planner decides the next action based on detected user intent."
+    },
+    {
+        "question": "what is reasoning engine",
+        "answer": "A reasoning engine analyzes information, memory, and knowledge to produce useful decisions or responses."
+    },
+    {
+        "question": "what are skills in partner ai",
+        "answer": "Skills are specialized modules that allow Partner AI to perform tasks such as weather, reminders, files, notes, and calculations."
+    },
+    {
+        "question": "what is voice system",
+        "answer": "The voice system allows Partner AI to understand spoken commands and respond using speech."
+    },
+    {
+        "question": "what is text to speech in partner ai",
+        "answer": "Text to speech allows Partner AI to convert generated responses into spoken audio."
+    },
+    {
+        "question": "what is speech recognition in partner ai",
+        "answer": "Speech recognition allows Partner AI to convert user voice commands into text for processing."
+    },
+    {
+        "question": "what is hud interface",
+        "answer": "The HUD interface is a futuristic visual dashboard that displays AI status, information, controls, and system activity."
+    },
+    {
+        "question": "what is reactor orb interface",
+        "answer": "A reactor orb interface is a visual AI indicator that represents system activity, status, or responses through animations."
+    },
+    {
+        "question": "what is reminder system in partner ai",
+        "answer": "The reminder system allows Partner AI to store scheduled tasks and notify the user at the correct time."
+    },
+    {
+        "question": "what is notification bridge",
+        "answer": "A notification bridge connects background services with the user interface to display alerts and updates."
+    },
+    {
+        "question": "what is vision system in partner ai",
+        "answer": "The vision system allows Partner AI to analyze images and understand visual information."
+    },
+    {
+        "question": "what is file skill",
+        "answer": "The file skill allows Partner AI to search, read, manage, and interact with files on the system."
+    },
+    {
+        "question": "what is calculator skill",
+        "answer": "The calculator skill allows Partner AI to perform mathematical calculations."
+    },
+    {
+        "question": "what is weather skill",
+        "answer": "The weather skill provides weather information using weather data sources."
+    },
+    {
+        "question": "what is news skill",
+        "answer": "The news skill provides recent information and news updates."
+    },
+    {
+        "question": "what is offline ai assistant",
+        "answer": "An offline AI assistant runs locally using stored knowledge, local processing, and installed tools without depending completely on online AI services."
+    },
+    {
+        "question": "why use local knowledge base",
+        "answer": "A local knowledge base provides privacy, reduces API dependency, works offline, and allows customization."
+    },
+    {
+        "question": "what is ai self improvement",
+        "answer": "AI self improvement is the ability of an AI system to learn from feedback and improve its responses over time."
+    },
+    {
+        "question": "what is conversation memory",
+        "answer": "Conversation memory stores previous interactions to maintain context during discussions."
+    },
+    {
+        "question": "what is context engine",
+        "answer": "A context engine manages previous information and helps an AI understand the current conversation better."
+    },
+    {
+        "question": "what is command parser",
+        "answer": "A command parser converts user instructions into structured commands that the system can execute."
+    },
+    {
+        "question": "what is automation assistant",
+        "answer": "An automation assistant performs repetitive tasks automatically to improve user efficiency."
+    },
+    {
+        "question": "what makes partner ai different",
+        "answer": "Partner AI is designed as a customizable personal assistant with local knowledge, memory, skills, automation, and a personalized interface."
+    }
+]

@@ -1,0 +1,106 @@
+[
+    {
+        "question": "what is dbms",
+        "answer": "DBMS stands for Database Management System. It is software used to store, organize, manage, and retrieve data from databases."
+    },
+    {
+        "question": "what is database",
+        "answer": "A database is an organized collection of information that can be stored, searched, and managed efficiently."
+    },
+    {
+        "question": "what is sql",
+        "answer": "SQL stands for Structured Query Language. It is used to create, manage, and query relational databases."
+    },
+    {
+        "question": "what is relational database",
+        "answer": "A relational database stores data in tables consisting of rows and columns, with relationships between tables."
+    },
+    {
+        "question": "what is primary key",
+        "answer": "A primary key is a unique identifier for each record in a database table."
+    },
+    {
+        "question": "what is foreign key",
+        "answer": "A foreign key is a field that connects one database table to another table using a primary key."
+    },
+    {
+        "question": "what is normalization",
+        "answer": "Normalization is the process of organizing database data to reduce redundancy and improve consistency."
+    },
+    {
+        "question": "what is operating system",
+        "answer": "An operating system is system software that manages hardware resources and provides services for applications."
+    },
+    {
+        "question": "what is process",
+        "answer": "A process is a program that is currently running and using system resources."
+    },
+    {
+        "question": "what is thread",
+        "answer": "A thread is the smallest unit of execution within a process."
+    },
+    {
+        "question": "what is cpu",
+        "answer": "CPU stands for Central Processing Unit. It is the main processor responsible for executing instructions."
+    },
+    {
+        "question": "what is ram",
+        "answer": "RAM is temporary memory used by a computer to store data and programs currently in use."
+    },
+    {
+        "question": "what is rom",
+        "answer": "ROM is permanent memory that stores important instructions needed for system operation."
+    },
+    {
+        "question": "what is file system",
+        "answer": "A file system is a method used by an operating system to organize and manage files on storage devices."
+    },
+    {
+        "question": "what is computer network",
+        "answer": "A computer network is a group of connected devices that communicate and share resources."
+    },
+    {
+        "question": "what is lan",
+        "answer": "LAN stands for Local Area Network. It connects computers within a small geographical area."
+    },
+    {
+        "question": "what is wan",
+        "answer": "WAN stands for Wide Area Network. It connects networks over large geographical distances."
+    },
+    {
+        "question": "what is ip address",
+        "answer": "An IP address is a unique address assigned to a device on a network for communication."
+    },
+    {
+        "question": "what is dns",
+        "answer": "DNS stands for Domain Name System. It converts domain names into IP addresses."
+    },
+    {
+        "question": "what is http",
+        "answer": "HTTP is a protocol used for transferring information between web browsers and servers."
+    },
+    {
+        "question": "what is https",
+        "answer": "HTTPS is a secure version of HTTP that encrypts communication between browser and server."
+    },
+    {
+        "question": "what is cybersecurity",
+        "answer": "Cybersecurity is the practice of protecting computers, networks, and data from unauthorized access and attacks."
+    },
+    {
+        "question": "what is firewall",
+        "answer": "A firewall is a security system that monitors and controls network traffic based on security rules."
+    },
+    {
+        "question": "what is malware",
+        "answer": "Malware is malicious software designed to damage systems or steal information."
+    },
+    {
+        "question": "what is cloud computing",
+        "answer": "Cloud computing provides computing resources such as servers, storage, and software through the internet."
+    },
+    {
+        "question": "what is aws",
+        "answer": "AWS stands for Amazon Web Services. It is a cloud computing platform providing servers, storage, databases, and other services."
+   }
+]

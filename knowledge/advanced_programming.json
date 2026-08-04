@@ -1,0 +1,123 @@
+[
+    {
+        "question": "what is object oriented programming",
+        "answer": "Object-oriented programming is a programming approach based on objects, classes, inheritance, encapsulation, abstraction, and polymorphism."
+    },
+    {
+        "question": "what is class",
+        "answer": "A class is a blueprint used to create objects with properties and behaviors."
+    },
+    {
+        "question": "what is object",
+        "answer": "An object is an instance of a class that contains data and functions."
+    },
+    {
+        "question": "what is inheritance",
+        "answer": "Inheritance allows one class to reuse and extend features of another class."
+    },
+    {
+        "question": "what is encapsulation",
+        "answer": "Encapsulation combines data and methods together while controlling access to internal details."
+    },
+    {
+        "question": "what is polymorphism",
+        "answer": "Polymorphism allows the same interface or method name to perform different behaviors."
+    },
+    {
+        "question": "what is abstraction",
+        "answer": "Abstraction hides complex implementation details and exposes only necessary features."
+    },
+    {
+        "question": "what is function",
+        "answer": "A function is a reusable block of code designed to perform a specific task."
+    },
+    {
+        "question": "what is variable",
+        "answer": "A variable is a named storage location used to hold data values in a program."
+    },
+    {
+        "question": "what is data type",
+        "answer": "A data type defines the kind of value a variable can store, such as integer, string, or boolean."
+    },
+    {
+        "question": "what is exception handling",
+        "answer": "Exception handling manages errors during program execution to prevent unexpected crashes."
+    },
+    {
+        "question": "what is api design",
+        "answer": "API design is the process of creating interfaces that allow software systems to communicate effectively."
+    },
+    {
+        "question": "what is rest api",
+        "answer": "REST API is an architectural style that uses HTTP methods to communicate between systems."
+    },
+    {
+        "question": "what is get request",
+        "answer": "A GET request retrieves data from a server."
+    },
+    {
+        "question": "what is post request",
+        "answer": "A POST request sends data to a server, often to create a new resource."
+    },
+    {
+        "question": "what is put request",
+        "answer": "A PUT request updates an existing resource on a server."
+    },
+    {
+        "question": "what is delete request",
+        "answer": "A DELETE request removes a resource from a server."
+    },
+    {
+        "question": "what is database management system",
+        "answer": "A database management system is software that manages storing, organizing, and retrieving data."
+    },
+    {
+        "question": "what is nosql database",
+        "answer": "A NoSQL database stores data using flexible structures such as documents, key-value pairs, or graphs."
+    },
+    {
+        "question": "what is mongodb",
+        "answer": "MongoDB is a NoSQL database that stores data in document-based JSON-like format."
+    },
+    {
+        "question": "what is mysql",
+        "answer": "MySQL is a relational database management system that uses SQL for managing data."
+    },
+    {
+        "question": "what is software architecture",
+        "answer": "Software architecture describes the high-level structure and organization of a software system."
+    },
+    {
+        "question": "what is mvc architecture",
+        "answer": "MVC separates an application into Model, View, and Controller components."
+    },
+    {
+        "question": "what is modular programming",
+        "answer": "Modular programming divides software into independent reusable modules."
+    },
+    {
+        "question": "what is clean code",
+        "answer": "Clean code is code that is readable, understandable, maintainable, and well organized."
+    },
+    {
+        "question": "what is software testing",
+        "answer": "Software testing verifies that an application works correctly and meets requirements."
+    },
+    {
+        "question": "what is unit testing",
+        "answer": "Unit testing checks individual components or functions of a program."
+    },
+    {
+        "question": "what is integration testing",
+        "answer": "Integration testing checks whether different software components work correctly together."
+    },
+    {
+        "question": "what is debugging process",
+        "answer": "The debugging process involves finding errors, understanding their causes, fixing them, and testing the solution."
+    },
+    {
+        "question": "what is version control",
+        "answer": "Version control is a system that tracks changes in files and allows developers to manage different versions of code."
+    }
+]
+

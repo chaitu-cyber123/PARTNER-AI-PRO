@@ -1,0 +1,102 @@
+[
+    {
+        "question": "what is programming",
+        "answer": "Programming is the process of creating instructions for computers using programming languages."
+    },
+    {
+        "question": "what is python",
+        "answer": "Python is a high-level, interpreted programming language known for simplicity, automation, AI, web development, and data science."
+    },
+    {
+        "question": "what is java",
+        "answer": "Java is a high-level object-oriented programming language used for Android development, enterprise applications, and backend systems."
+    },
+    {
+        "question": "what is c++",
+        "answer": "C++ is a powerful programming language used for system software, games, embedded systems, and high-performance applications."
+    },
+    {
+        "question": "what is javascript",
+        "answer": "JavaScript is a programming language mainly used to create interactive websites and web applications."
+    },
+    {
+        "question": "what is html",
+        "answer": "HTML is a markup language used to create the structure of web pages."
+    },
+    {
+        "question": "what is css",
+        "answer": "CSS is a styling language used to control the appearance and layout of websites."
+    },
+    {
+        "question": "what is flask",
+        "answer": "Flask is a lightweight Python web framework used to build web applications and APIs."
+    },
+    {
+        "question": "what is api",
+        "answer": "API stands for Application Programming Interface. It allows different software systems to communicate with each other."
+    },
+    {
+        "question": "what is json",
+        "answer": "JSON is a lightweight data format used for storing and exchanging structured information."
+    },
+    {
+        "question": "what is git",
+        "answer": "Git is a version control system used to track changes in software projects."
+    },
+    {
+        "question": "what is github",
+        "answer": "GitHub is an online platform for hosting Git repositories and collaborating on software projects."
+    },
+    {
+        "question": "what is algorithm",
+        "answer": "An algorithm is a step-by-step procedure used to solve a problem or perform a task."
+    },
+    {
+        "question": "what is data structure",
+        "answer": "A data structure is a way of organizing and storing data so it can be accessed efficiently."
+    },
+    {
+        "question": "what is array",
+        "answer": "An array is a data structure that stores multiple values in a continuous collection."
+    },
+    {
+        "question": "what is linked list",
+        "answer": "A linked list is a data structure where elements are stored as nodes connected through links."
+    },
+    {
+        "question": "what is stack",
+        "answer": "A stack is a data structure that follows the Last In First Out principle."
+    },
+    {
+        "question": "what is queue",
+        "answer": "A queue is a data structure that follows the First In First Out principle."
+    },
+    {
+        "question": "what is object oriented programming",
+        "answer": "Object-oriented programming is a programming approach based on objects, classes, inheritance, and encapsulation."
+    },
+    {
+        "question": "what is compiler",
+        "answer": "A compiler converts high-level programming code into machine code that a computer can execute."
+    },
+    {
+        "question": "what is interpreter",
+        "answer": "An interpreter executes programming code line by line instead of compiling the entire program first."
+    },
+    {
+        "question": "what is debugging",
+        "answer": "Debugging is the process of finding and fixing errors in software."
+    },
+    {
+        "question": "what is machine learning",
+        "answer": "Machine learning is a branch of AI where computers learn patterns from data to make predictions or decisions."
+    },
+    {
+        "question": "what is deep learning",
+        "answer": "Deep learning is a branch of machine learning that uses artificial neural networks to learn complex patterns."
+    },
+    {
+        "question": "what is neural network",
+        "answer": "A neural network is a computing model inspired by the human brain that learns from data."
+    }
+]

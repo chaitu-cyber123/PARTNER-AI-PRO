@@ -1,0 +1,42 @@
+[
+    {
+        "role": "user",
+        "content": "\nSummarize these news headlines in a simple way.\nGive a short 3-4 line explanation.\n\nHeadlines:\nHere are the latest general headlines, sir:\n1. SCIEX Helps Clinical Labs Move From Sample to Answer Faster With New Software and LC Solutions\n2. \u201cWe are breaking under the cuts\u201d: Scarborough hospital workers call on Ford government to increase funding in the face of $36 million deficit\n3. Miley Cyrus-Edited 'Wonderland' Issue To Feature Unseen Pics, Interview\n4. Despite Her Reality TV Resum\u00e9, Stassi Schroeder\u2019s Dating History Is Pretty Low-Key\n5. David Ellison \u201cConfident\u201d WBD Deal Will Close, Thanks Staffers for Continued Patience\n\n"
+    },
+    {
+        "role": "user",
+        "content": "\nSummarize these news headlines in a simple way.\nGive a short 3-4 line explanation.\n\nHeadlines:\nHere are the latest general headlines, sir:\n1. SCIEX Helps Clinical Labs Move From Sample to Answer Faster With New Software and LC Solutions\n2. \u201cWe are breaking under the cuts\u201d: Scarborough hospital workers call on Ford government to increase funding in the face of $36 million deficit\n3. Miley Cyrus-Edited 'Wonderland' Issue To Feature Unseen Pics, Interview\n4. Despite Her Reality TV Resum\u00e9, Stassi Schroeder\u2019s Dating History Is Pretty Low-Key\n5. David Ellison \u201cConfident\u201d WBD Deal Will Close, Thanks Staffers for Continued Patience\n\n"
+    },
+    {
+        "role": "user",
+        "content": "what is the weather in Tenali"
+    },
+    {
+        "role": "user",
+        "content": "remember that I want to wake up tomorrow at 8:00 a.m."
+    },
+    {
+        "role": "partner",
+        "content": "I'm sorry, I don't know the answer yet. You can teach me using the learn command, or I'll answer it once a local AI model is connected."
+    },
+    {
+        "role": "user",
+        "content": "Weather"
+    },
+    {
+        "role": "user",
+        "content": "Weather in"
+    },
+    {
+        "role": "user",
+        "content": "Weather"
+    },
+    {
+        "role": "partner",
+        "content": "I'm sorry, I don't know the answer yet. You can teach me using the learn command, or I'll answer it once a local AI model is connected."
+    },
+    {
+        "role": "partner",
+        "content": "I'm sorry, I don't know the answer yet. You can teach me using the learn command, or I'll answer it once a local AI model is connected."
+    }
+]

@@ -1,0 +1,135 @@
+/* ==========================
+   PARTNER AI V3 PANELS
+==========================*/
+
+.side-panel{
+    background:rgba(0,18,35,.45);
+    border:1px solid rgba(0,255,255,.25);
+    border-radius:20px;
+    padding:20px;
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:
+        0 0 25px rgba(0,255,255,.08),
+        inset 0 0 20px rgba(0,255,255,.05);
+
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.side-panel h3{
+    color:#00eaff;
+    letter-spacing:3px;
+    font-size:18px;
+}
+
+.side-panel p{
+    color:#d8f8ff;
+    font-size:14px;
+    border-bottom:1px solid rgba(255,255,255,.08);
+    padding-bottom:8px;
+}
+
+.topbar{
+    background:rgba(0,15,30,.45);
+    backdrop-filter:blur(12px);
+
+    box-shadow:
+        0 0 20px rgba(0,255,255,.08);
+
+    border:1px solid rgba(0,255,255,.18);
+}
+
+.logo{
+    font-size:28px;
+    letter-spacing:5px;
+    color:#00f6ff;
+    font-weight:bold;
+}
+
+.status{
+    display:flex;
+    gap:20px;
+    font-size:16px;
+}
+
+.core-status{
+
+    min-width:280px;
+
+    white-space:pre-line;
+
+    font-family:monospace;
+
+}
+/* ==========================
+   CHAT PANEL
+========================== */
+
+.chat-panel{
+    margin-top:20px;
+    height:100%;
+
+    min-height:0;
+
+    overflow:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+.chat-history{
+
+    flex:1;
+
+    min-height:0;
+
+    height:100%;
+
+    overflow-y:auto;
+
+    overflow-x:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+    padding-right:6px;
+
+}
+.chat-history p{
+
+    background:rgba(0,255,255,.08);
+
+    border-left:3px solid #00eaff;
+
+    border-radius:8px;
+
+    padding:10px;
+
+    margin:0;
+
+    color:#d8f8ff;
+
+    word-wrap:break-word;
+
+}
+
+.chat-history::-webkit-scrollbar{
+
+    width:6px;
+
+}
+
+.chat-history::-webkit-scrollbar-thumb{
+
+    background:#00eaff;
+
+    border-radius:10px;
+
+}
