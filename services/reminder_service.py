@@ -7,33 +7,64 @@ from datetime import datetime
 from services.voice import speak
 
 NOTIFICATION_FILE = "data/notifications.json"
+REMINDER_FILE = "data/reminders.json"
+
+
+def load_json_file(filepath, default):
+    """Safely load JSON data without crashing Partner."""
+
+    if not os.path.exists(filepath):
+        return default
+
+    try:
+        with open(filepath, "r") as f:
+            data = json.load(f)
+
+        return data
+
+    except (json.JSONDecodeError, OSError) as e:
+        print(f"⚠️ Could not read {filepath}: {e}")
+        return default
+
+
+def save_json_file(filepath, data):
+    """Safely save JSON data."""
+
+    try:
+        os.makedirs(os.path.dirname(filepath), exist_ok=True)
+
+        with open(filepath, "w") as f:
+            json.dump(data, f, indent=4)
+
+        return True
+
+    except OSError as e:
+        print(f"❌ Could not save {filepath}: {e}")
+        return False
 
 
 def save_notification(message):
 
-    notifications = []
+    notifications = load_json_file(NOTIFICATION_FILE, [])
 
-    if os.path.exists(NOTIFICATION_FILE):
-        with open(NOTIFICATION_FILE, "r") as f:
-            notifications = json.load(f)
+    if not isinstance(notifications, list):
+        notifications = []
 
     notifications.append({
         "message": message,
         "time": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     })
 
-    with open(NOTIFICATION_FILE, "w") as f:
-        json.dump(notifications, f, indent=4)
-REMINDER_FILE = "data/reminders.json"
+    save_json_file(NOTIFICATION_FILE, notifications)
 
 
 def check_reminders():
 
-    if not os.path.exists(REMINDER_FILE):
-        return []
+    reminders = load_json_file(REMINDER_FILE, [])
 
-    with open(REMINDER_FILE, "r") as f:
-        reminders = json.load(f)
+    if not isinstance(reminders, list):
+        print(f"⚠️ Invalid reminder format in {REMINDER_FILE}")
+        return []
 
     now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
@@ -42,34 +73,46 @@ def check_reminders():
 
     for reminder in reminders:
 
-         if (
-    reminder.get("completed") == False
-    and reminder["time"] <= now
-):
+        if not isinstance(reminder, dict):
+            continue
+
+        if (
+            reminder.get("completed") is False
+            and reminder.get("time")
+            and reminder["time"] <= now
+        ):
             triggered.append(reminder)
             reminder["completed"] = True
             changed = True
 
     if changed:
-        with open(REMINDER_FILE, "w") as f:
-            json.dump(reminders, f, indent=4)
+        save_json_file(REMINDER_FILE, reminders)
 
     return triggered
 
 
 def reminder_worker():
 
+    print("🔔 Reminder worker started")
+
     while True:
 
-        reminders = check_reminders()
+        try:
+            reminders = check_reminders()
 
-        for reminder in reminders:
+            for reminder in reminders:
 
-            message = f"Reminder. {reminder['title']}"
-            save_notification(message)
-            print("🔔 REMINDER:", message)
+                message = f"Reminder. {reminder.get('title', 'You have a reminder')}"
 
-            #speak(message)
+                save_notification(message)
+
+                print("🔔 REMINDER:", message)
+
+                # Browser/HUD voice can handle this later.
+                # speak(message)
+
+        except Exception as e:
+            print(f"❌ Reminder worker error: {e}")
 
         time.sleep(60)
 
@@ -82,3 +125,4 @@ def start_reminder_service():
     )
 
     thread.start()
+
